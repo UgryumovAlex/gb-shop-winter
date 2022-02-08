@@ -4,11 +4,14 @@ security:
       enabled: true
 encrypt:
   key-store:
-    alias: ${ENCRYPT_KEYSTORE_ALIAS:gbshopkey}
+    alias: ${ENCRYPT_KEYSTORE_ALIAS:gbshopkeyua}
     password: ${ENCRYPT_KEYSTORE_PASSWORD:123456}
-    location: ${ENCRYPT_KEYSTORE_LOCATION:file:///C:\GeekBrains\Java\Spring\gb-shop-winter\server.jks}
+    location: ${ENCRYPT_KEYSTORE_LOCATION:file:///C:\GeekBrains\Java\Spring\gb-shop-winter\serverua.jks}
 
 
 #  keytool -genkeypair -alias gbshopkey -keyalg RSA \
 #  -dname "CN=Web Server,OU=Unit,O=geekbrains,L=Moscow,C=Russia" \
 #  -keypass 123456 -keystore server.jks -storepass 123456
+
+
+# keytool -genkeypair -alias gbshopkeyua -keyalg RSA  -dname "CN=Web Server,OU=Unit,O=geekbrains,L=Moscow,C=Russia"  -keypass 123456 -keystore serverua.jks -storepass 123456

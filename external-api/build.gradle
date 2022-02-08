@@ -25,7 +25,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    implementation files('../lib/gb-api-0.1.17-plain.jar')
+    implementation files('../lib/gb-api-0.1.16-plain.jar')
 }
 
 dependencyManagement {
